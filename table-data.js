@@ -1,5 +1,3 @@
-// $(document).ready(function() {
-
 var tableData = {
   head: {
     A: 'Column 1',
@@ -26,8 +24,3 @@ var tableData = {
     }
   ]
 };
-
-// $('#table').render(tableData);
-
-
-// });
