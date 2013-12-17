@@ -1,3 +1,7 @@
+var listData = [{item: 'first'}, {item: 'second'}, {item: 'third'}];
+
+var array = ['first', 'second', 'third'];
+
 var tableData = {
   head: {
     A: 'Column 1',
