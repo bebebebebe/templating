@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <script src="http://distal.googlecode.com/svn/trunk/distal.js"></script>
+  <title>*Distal</title>
+</head>
+<body>
+
+
+ <html> 
+
+
+  <table id='table' border='1'>
+    <thead>
+      <tr>
+        <th data-qrepeat="m headings"><span data-qtext="m"></span></th>
+      <tr>
+    </thead>
+    <tbody>
+      <tr data-qrepeat='m cells'>
+        <td><span data-qtext="m.col1"></span></td>
+        <td><span data-qtext="m.col2"></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+
+      var tableData = {
+        headings: ['A', 'B'],
+        cells: [
+          {col1: 'A1', col2: 'B1'},
+          {col1: 'A2', col2: 'B2'},
+          {col1: 'A3', col2: 'B3'}
+        ]
+      };
+
+      distal(document.getElementById('table'), tableData);
+
+    </script>
+
+  </html>
+</body>  
