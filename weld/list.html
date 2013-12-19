@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="weld.js"></script>
+    <title>*Weld</title>
+  </head>
+  <body>
+
+    <ul id='list'>
+      <li class='contact'>
+        <span class='name'>Name here</span>
+        <p class='info'>Information here</p>
+      </li>
+    </ul>  
+
+    <script>
+      var data = [{ name: 'Alice',  info : 'first person' },
+          { name: 'Bob', info : 'second' }];
+
+      weld(document.querySelector('#list'), data);
+    </script>
+
+  </body>
+</html>
