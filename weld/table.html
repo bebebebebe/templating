@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="weld.js"></script>
+    <script src='../jquery-min.js'></script>
+    <title>* Weld table</title>
+  </head>
+  <body>
+
+
+    <table border='1' class='table'>
+    <thead>
+      <tr>
+        <th class='headings'></th>
+      </tr>
+    </thead>
+    <tbody class='body'>
+      <tr class='cells'>
+        <td class='col1'></td>
+        <td class='col2'></td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <script>
+
+    var tableData = {
+      headings: ['A', 'B'],
+      cells: [
+        {col1: 'A1', col2: 'B1'},
+        {col1: 'A2', col2: 'B2'},
+        {col1: 'A3', col2: 'B3'}
+      ]
+    };
+
+    weld(document.querySelector('table'), tableData);
+    
+  
+  </script>
+
+  </body>
+</html>
