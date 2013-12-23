@@ -30,8 +30,8 @@ var tableData = {
 };
 
 var table = {
-  heading: ['Col 1', 'Col 2'],
-  row: [
+  headings: ['Col 1', 'Col 2'],
+  rows: [
     {col1: 'A1', col2: 'A2'},
     {col1: 'B1', col2: 'B2'},
     {col1: 'C1', col2: 'C2'}
