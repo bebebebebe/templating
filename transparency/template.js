@@ -2,6 +2,19 @@ $(document).ready(function() {
 
   $('#table').render(tableData);
 
-  $('#table2').render(table);
+
+// for table 2, iterating over table rows and using an array to populate table headings
+
+   var directive = {
+    heading: {
+      column: {
+        text: function() {
+          return this.value;
+        }
+      }
+    }
+  };
+
+  $('#table2').render(table, directive);
 
 });
