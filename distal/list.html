@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <script src="http://distal.googlecode.com/svn/trunk/distal.js"></script>
+  <title>Distal list</title>
+</head>
+<body>
+
+     <ol id='list'> 
+       <li data-qrepeat="item items"> 
+         <span data-qtext="item" ></span> 
+     </ol> 
+
+  <script>
+
+    var data = {
+      items: [ 'first', 'second', 'third']
+    };
+
+    distal(document.getElementById('list'), data);
+  </script>
+
+</body>
