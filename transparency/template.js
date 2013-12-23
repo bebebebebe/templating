@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('#table').render(tableData);
+  $('#table').render(table);
 
 
 // for table 2, iterating over table rows and using an array to populate table headings
@@ -15,6 +15,6 @@ $(document).ready(function() {
     }
   };
 
-  $('#table2').render(table, directive);
+  $('#table2').render(tableData, directive);
 
 });

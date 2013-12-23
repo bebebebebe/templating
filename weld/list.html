@@ -2,22 +2,17 @@
 <html>
   <head>
     <script src="weld.js"></script>
-    <title>*Weld</title>
+    <script src='../data.js'></script>
+    <title>Weld list</title>
   </head>
   <body>
 
-    <ul class='list'>
-      <li class='contact'>
-        <span class='name'>Name here</span>
-        <p class='info'>Information here</p>
-      </li>
-    </ul>  
+    <ol>
+      <li class='item'></li>
+    </ol>
 
     <script>
-      var data = [{ name: 'Alice',  info : 'some  info about the first person' },
-          { name: 'Bob', info : 'and the second' }];
-
-      weld(document.querySelector('.list'), data);
+      weld(document.querySelector('.item'), array);
     </script>
 
   </body>

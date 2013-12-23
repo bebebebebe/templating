@@ -3,6 +3,15 @@ var listData = [{item: 'first'}, {item: 'second'}, {item: 'third'}];
 var array = ['first', 'second', 'third'];
 
 var tableData = {
+  headings: ['Col 1', 'Col 2'],
+  rows: [
+    {col1: 'A1', col2: 'A2'},
+    {col1: 'B1', col2: 'B2'},
+    {col1: 'C1', col2: 'C2'}
+  ]
+};
+
+var table = {
   head: {
     A: 'Column 1',
     B: 'Column 2',
@@ -26,14 +35,5 @@ var tableData = {
       c: 'row 3, col 3',
       d: 'row 3, col 4'
     }
-  ]
-};
-
-var table = {
-  headings: ['Col 1', 'Col 2'],
-  rows: [
-    {col1: 'A1', col2: 'A2'},
-    {col1: 'B1', col2: 'B2'},
-    {col1: 'C1', col2: 'C2'}
   ]
 };

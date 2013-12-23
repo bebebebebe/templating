@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="weld.js"></script>
-    <script src='../jquery-min.js'></script>
-    <title>* Weld table</title>
+    <script src='weld.js'></script>
+    <script src='../data.js'></script>
+    <title>Weld table</title>
   </head>
   <body>
-
 
     <table border='1' class='table'>
     <thead>
@@ -15,7 +14,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr class='cells'>
+      <tr class='rows'>
         <td class='col1'></td>
         <td class='col2'></td>
       </tr>
@@ -24,17 +23,7 @@
 
   <script>
 
-    var tableData = {
-      headings: ['A', 'B'],
-      cells: [
-        {col1: 'A1', col2: 'B1'},
-        {col1: 'A2', col2: 'B2'},
-        {col1: 'A3', col2: 'B3'}
-      ]
-    };
-
     weld(document.querySelector('table'), tableData);
-    
   
   </script>
 
