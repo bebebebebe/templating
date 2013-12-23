@@ -6,7 +6,7 @@ $(document).ready(function() {
 // for table 2, iterating over table rows and using an array to populate table headings
 
    var directive = {
-    heading: {
+    headings: {
       column: {
         text: function() {
           return this.value;
