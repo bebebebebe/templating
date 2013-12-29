@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <head>
   <script src="distal.js"></script>
-  
-  <title>Distal list</title>
+  <title>Distal selecting</title>
 </head>
 <body>
 
@@ -13,22 +12,44 @@
     Besides eq and ne for equal and not equal, other  comparators are not, gt, lt, cn, nc for negation, greater than, less than, contains, and, not contains. -->
 
 
-
      <ol id='list'> 
        <li data-qrepeat="item items"> 
         <span data-qif="# eq 1" data-qtext="item" style="color:red"></span> 
         <span data-qif="# ne 1" data-qtext="item"></span> 
+     </ol>
+
+     <h2>Example 2</h2>
+
+     <ol id='list2'> 
+       <li data-qrepeat="item items"> 
+        <span data-qtext="item even"></span>
+      </li>
      </ol> 
 
 
   <script>
 
     var data = {
-      items: [ 'first', 'second', 'third']
+      items: [ 'first', 'second', 'third', 'fourth', 'fifth']
+    };
+
+  
+
+    distal.format["even"] = function(value){
+      count += 1;
+      if (count%2 === 0) {
+        return 'the ' + value + ' is even';
+      } else {
+        return value;
+      }
     };
 
     distal(document.getElementById('list'), data);
-    
+
+    var count = 0;
+    distal(document.getElementById('list2'), data);
+
+
   </script>
 
 </body>
