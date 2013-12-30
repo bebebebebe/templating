@@ -17,12 +17,14 @@ You can use the <code>data-qif='condition'</code> attribute to add <code>display
 JSTAL is another Template Attribute Language (it seems(?) to be similar to Distal, but less maintained/documented).
 
 ### Pure
-Pure maps JSON data to HTML classes. By default, the value of a JavaScript/JSON object is mapped to the HTML class with the name of its key. This default behavior can be altered by using <a href='http://beebole.com/pure/documentation/what-is-a-directive/'>directives</a>, JavaScript objects that determine how JSON data is to bound to CSS selectors. See examples of a directive for a <a href='pure/list-template.js'>list</a> and for a <a href='pure/table-template.hs'>table</a>. 
+Pure maps JSON data to HTML classes. By default, the value of a JavaScript/JSON object is mapped to the HTML class with the name of its key. This default behavior can be altered by using <a href='http://beebole.com/pure/documentation/what-is-a-directive/'>directives</a>, JavaScript objects that determine how JSON data is to bound to CSS selectors. The keys of a directive are CSS selectors, and the values are strings, objects or functions.
 
-You can also use directives to add CSS selectors to nodes; <a href='pure/selected-list-template.js'>here</a> is an example of a directive where different classes are added to different items in a collection.
+See examples of a directive for a <a href='pure/list-template.js'>list</a> and for a <a href='pure/table-template.hs'>table</a>. 
+
+You can use directives to add CSS selectors to nodes; <a href='pure/selected-list-template.js'>here</a> is an example of a directive where different classes are added to different items in a collection.
 
 ### Transparency
-By default, Transparency binds JavaScript objects to a DOM element by id, class, name attribute and data-bind attribute. Like Pure, default behavior can be altered with directives. Directives are JavaScript objects whose keys are the attributes of the target elements, and whose values map html or text attributes of the node selected by the key to JavaScript functions. See examples of directives for a <a href='transparency/list-template.js'>list</a>, and for a <a href='transparency/template.js'>table</a>. 
+By default, Transparency binds JavaScript objects to a DOM element by id, class, name attribute and data-bind attribute. And as with Pure, this default behavior can be altered with directives. In Transparency, directives are JavaScript objects whose keys are the attributes of the target elements, and whose values map html or text attributes of the node selected by the key to JavaScript functions. 
 
-<a href='transparency/selected-list.html'>Here</a> is an example of a directive that treats elements of a collection differently depending on their position in the collection.
+See a directive for a <a href='transparency/list-template.js'>list</a>, and for a <a href='transparency/template.js'>table</a>. <a href='transparency/selected-list.html'>Here</a> is an example of a directive that treats elements of a collection differently depending on their position in the collection.
 
