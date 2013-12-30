@@ -1,6 +1,7 @@
 var directive = {
   'li':{
     'i<-context':{
+      // this adds css classes to list items, depending on their position in the data array
       '@class+':function(arg){
         var oddEven = (arg.pos % 2 === 0) ? ' odd' : ' even';
         var first = (arg.pos === 0) ? ' first' : '';
@@ -10,28 +11,6 @@ var directive = {
     }
   }
 };
-
-
-// var directive = {
-//     //trigger a loop
-//     'tr' : {
-//       // loop on the property animals in the JSON
-//       'animal<-animals' : { 
-//         // add(+) the return value of the function to the class
-//         '@class+':function(arg){ 
-//           var oddEven, firstLast;
-//           oddEven = (arg.pos % 2 == 0) ? ' even' : ' odd';
-//           firstLast = (arg.pos == 0) ? 
-//             ' first' : 
-//             (arg.pos == arg.animal.items.length - 1) ? 
-//               ' last' : 
-//               '';
-//           return oddEven + firstLast;
-//        },
-//        'td':'animal.name'
-//        }
-//      }
-//     };
 
 
 $(document).ready(function() { 
