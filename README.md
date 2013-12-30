@@ -22,5 +22,7 @@ Pure maps JSON data to HTML classes. By default, the value of a JavaScript/JSON 
 You can also use directives to add CSS selectors to nodes; <a href='pure/selected-list-template.js'>here</a> is an example of a directive where different classes are added to different items in a collection.
 
 ### Transparency
+By default, Transparency binds JavaScript objects to a DOM element by id, class, name attribute and data-bind attribute. Like Pure, default behavior can be altered with directives. Directives are JavaScript objects whose keys are the attributes of the target elements, and whose values map html or text attributes of the node selected by the key to JavaScript functions. See examples of directives for a <a href='transparency/list-template.js'>list</a>, and for a <a href='transparency/template.js'>table</a>. 
 
+<a href='transparency/selected-list.html'>Here</a> is an example of a directive that treats elements of a collection differently depending on their position in the collection.
 
