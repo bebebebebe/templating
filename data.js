@@ -1,6 +1,6 @@
 var listData = [{item: 'first'}, {item: 'second'}, {item: 'third'}];
 
-var array = ['first', 'second', 'third'];
+var array = ['first', 'second', 'third', 'fourth', 'fifth'];
 
 var tableData = {
   headings: ['Col 1', 'Col 2'],
