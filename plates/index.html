@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Plates example</title>
+    <script src="plates.js"></script>
+</head>
+<body>
+    <div id="people"></div>
+
+    <script>
+        var data = {
+            people: [
+                { name: 'Alice'},
+                { name: 'Bob'},
+                { name: 'Carol' }
+            ]
+        }
+        var html = '<span class="name"></span><br/>';
+
+        var template = Plates.bind(html, data.people);
+        document.getElementById('people').innerHTML = template; 
+
+
+    </script>
+</body>
+</html>
