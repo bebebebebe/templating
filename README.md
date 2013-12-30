@@ -17,7 +17,7 @@ You can use the <code>data-qif='condition'</code> attribute to add <code>display
 JSTAL is another Template Attribute Language (it seems(?) to be similar to Distal, but less maintained/documented).
 
 ### Pure
-Pure maps JSON data to HTML classes. By default, the value of a JavaScript/JSON object is mapped to the HTML class with the name of its key. This default behavior can be altered by using <a href='http://beebole.com/pure/documentation/rendering-with-directives/'>directives</a>, JavaScript objects that determine how JSON data is to bound to CSS selectors. See examples of a directive for a <a href='pure/list-template.js'>list</a> and for a <a href='pure/table-template.hs'>table</a>. 
+Pure maps JSON data to HTML classes. By default, the value of a JavaScript/JSON object is mapped to the HTML class with the name of its key. This default behavior can be altered by using <a href='http://beebole.com/pure/documentation/what-is-a-directive/'>directives</a>, JavaScript objects that determine how JSON data is to bound to CSS selectors. See examples of a directive for a <a href='pure/list-template.js'>list</a> and for a <a href='pure/table-template.hs'>table</a>. 
 
 You can also use directives to add CSS selectors to nodes; <a href='pure/selected-list-template.js'>here</a> is an example of a directive where different classes are added to different items in a collection.
 
