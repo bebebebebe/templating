@@ -30,3 +30,5 @@ By default, Transparency binds JavaScript objects to a DOM element by id, class,
 
 See a directive for a <a href='transparency/list-template.js'>list</a>, and for a <a href='transparency/template.js'>table</a>. <a href='transparency/selected-list.html'>Here</a> is an example of a directive that treats elements of a collection differently depending on their position in the collection.
 
+<a href='transparency/node'>Here</a> is an example (of a list) rendered with transparency in Node.js.
+
