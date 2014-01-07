@@ -14,7 +14,7 @@ To bind data, mark HTML with TAL attributes and execute the distal function with
 
 You can use the <code>data-qif='condition'</code> attribute to add <code>display: none</code> to the nodes for which <code>condition</code> is false. When iterating over a collection with <code>data-qrepeat</code>, you can access the current index location by using "#" as the property name. <a href='https://code.google.com/p/distal/wiki/Formatters'>Formatters</a> are JavaScript functions that allow you to manipulate JSON data before adding it to a node. See examples of data-qif and formatters <a href='distal/selected-list.html'>here</a>.
 
-Apparently slower than other options, because Distal works by modifying the existing DOM rather than replacing and regenerating it. (See discussion in <a href='https://code.google.com/p/distal/issues/detail?id=2'>this issue</a>.)
+Apparently Distal is slower than other options, because Distal works by modifying the existing DOM rather than replacing and regenerating it. (See discussion in <a href='https://code.google.com/p/distal/issues/detail?id=2'>this issue</a>.)
 
 JSTAL is another Template Attribute Language (it seems(?) to be similar to Distal, but less maintained/documented).
 
